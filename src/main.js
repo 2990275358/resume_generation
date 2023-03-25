@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.static(path.resolve(__dirname,"../dist/mysql")))
 
-app.get('/',(req,res) => {
+app.get('/mysql',(req,res) => {
   res.sendFile(path.resolve(__dirname,"../dist/mysql/index.html"))//给客户端响应 'Home Page.' 字符串
 })
 
